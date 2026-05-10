@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.16 Área del Cuadrado</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<div class="pagina">
+
+  <div class="barra-nav">
+    <span class="nombre-nav" id="nombre-nav">Usuario</span>
+    <a href="../index.html" class="btn-inicio">🏠</a>
+  </div>
+
+  <div class="caja-problema">
+    <h2>2.16 — Área del Cuadrado</h2>
+    <p class="descripcion">Calcula el área de un cuadrado. Fórmula: A = lado × lado</p>
+
+    <img src="../images/cuadrado.png" class="imagen-referencia">
+
+    <label>Longitud del lado:</label>
+    <input type="number" id="lado" placeholder="Ej: 7">
+
+    <button class="btn-calcular" onclick="calcular_2_16()">Calcular</button>
+
+    <div class="resultado" id="resultado">
+      <h3>Resultado</h3>
+      <p>Lado: <strong id="r-lado"></strong> unidades</p>
+      <p class="total">Área: <span id="r-area"></span> unidades²</p>
+    </div>
+  </div>
+
+</div>
+<script src="../../scripts/problemas.js"></script>
+<script> cargarNombre(); </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.10 Pago de Agua</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<div class="pagina">
+
+  <div class="barra-nav">
+    <span class="nombre-nav" id="nombre-nav">Usuario</span>
+    <a href="../index.html" class="btn-inicio">🏠</a>
+  </div>
+
+  <div class="caja-problema">
+    <h2>2.10 — Pago de Agua</h2>
+    <p class="descripcion">La CONAGUA requiere determinar el pago por el total de metros cúbicos consumidos de agua.</p>
+
+    <img src="../images/agua.png" class="imagen-referencia">
+
+    <label>Metros cúbicos consumidos:</label>
+    <input type="number" id="metros" placeholder="Ej: 15">
+
+    <label>Precio por metro cúbico ($):</label>
+    <input type="number" id="precio" placeholder="Ej: 12.50">
+
+    <button class="btn-calcular" onclick="calcular_2_10()">Calcular</button>
+
+    <div class="resultado" id="resultado">
+      <h3>Resultado</h3>
+      <p>Metros: <strong id="r-metros"></strong> m³</p>
+      <p>Precio por m³: <strong id="r-precio"></strong></p>
+      <p class="total">Total: $<span id="r-total"></span></p>
+    </div>
+  </div>
+
+</div>
+<script src="../scripts/problemas.js"></script>
+<script> cargarNombre(); </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.20 Hotel Cama Arena</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<div class="pagina">
+
+  <div class="barra-nav">
+    <span class="nombre-nav" id="nombre-nav">Usuario</span>
+    <a href="../index.html" class="btn-inicio">🏠</a>
+  </div>
+
+  <div class="caja-problema">
+    <h2>2.20 — Hotel "Cama Arena"</h2>
+    <p class="descripcion">Determina cuánto debe cobrarle el hotel a un huésped según las noches de estancia y el costo por noche.</p>
+
+    <img src="../images/hotel.png" class="imagen-referencia">
+
+    <label>Nombre del huésped:</label>
+    <input type="text" id="huesped" placeholder="Nombre completo">
+
+    <label>Número de noches:</label>
+    <input type="number" id="noches" placeholder="Ej: 3">
+
+    <label>Costo por noche ($):</label>
+    <input type="number" id="costo" placeholder="Ej: 650">
+
+    <button class="btn-calcular" onclick="calcular_2_20()">Calcular</button>
+
+    <div class="resultado" id="resultado">
+      <h3>Resumen</h3>
+      <p>Huésped: <strong id="r-huesped"></strong></p>
+      <p>Noches: <strong id="r-noches"></strong></p>
+      <p>Costo por noche: <strong id="r-costo"></strong></p>
+      <p class="total">Total: $<span id="r-total"></span></p>
+    </div>
+  </div>
+
+</div>
+<script src="../../scripts/problemas.js"></script>
+<script> cargarNombre(); </script>
+</body>
+</html>

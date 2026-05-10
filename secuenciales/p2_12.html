@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.12 Descuento + IVA</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<div class="pagina">
+
+  <div class="barra-nav">
+    <span class="nombre-nav" id="nombre-nav">Usuario</span>
+    <a href="../index.html" class="btn-inicio">🏠</a>
+  </div>
+
+  <div class="caja-problema">
+    <h2>2.12 — Descuento + IVA</h2>
+    <p class="descripcion">Calcula el precio final de un artículo aplicando 20% de descuento y 15% de IVA.</p>
+
+    <img src="../images/descuento.png" class="imagen-referencia">
+
+    <label>Precio original ($):</label>
+    <input type="number" id="precio" placeholder="Ej: 500">
+
+    <button class="btn-calcular" onclick="calcular_2_12()">Calcular</button>
+
+    <div class="resultado" id="resultado">
+      <h3>Resultado</h3>
+      <p>Precio original: <strong id="r-original"></strong></p>
+      <p>Descuento 20%: <strong id="r-descuento"></strong></p>
+      <p>Con descuento: <strong id="r-con-desc"></strong></p>
+      <p>IVA 15%: <strong id="r-iva"></strong></p>
+      <p class="total">Total final: $<span id="r-total"></span></p>
+    </div>
+  </div>
+
+</div>
+<script src="../../scripts/problemas.js"></script>
+<script> cargarNombre(); </script>
+</body>
+</html>
